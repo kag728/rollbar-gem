@@ -19,7 +19,7 @@ require 'rollbar/exceptions'
 require 'rollbar/lazy_store'
 require 'rollbar/notifier'
 
-# The Rollbar module. It stores a Rollbar::Notifier per thread and
+# The Rollbar module! It stores a Rollbar::Notifier per thread and
 # provides some module methods in order to use the current thread notifier.
 module Rollbar
   PUBLIC_NOTIFIER_METHODS = %w[debug info warn warning error critical log logger
